@@ -51,6 +51,6 @@ app.post("/products/:id/update_quantity", async function(req, res){
     return res.json({ message: "Updated Successfully!"})
 })
 
-app.listen(3000, ()=>{
+app.listen(process.env.PORT || '3000', ()=>{
   console.log("App is running on port 3000")
 })
